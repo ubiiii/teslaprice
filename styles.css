@@ -1,0 +1,646 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full-height alignment */
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Optional: Add a background color for contrast */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    border: 2;
+}
+
+p {
+    font-size: 18px; /* Adjust the font size */
+    font-weight: 600; /* Semi-bold for emphasis */
+    color: #000000; /* Dark gray color */
+    text-align: center; /* Center-align the text */
+    margin-top: 10px; /* Space above the text */
+    margin-bottom: 10px; /* Space below the text */
+    font-family: SF Pro;
+    
+}
+
+p:hover {
+    color: #7b58db; /* Change color on hover to Tesla red */
+    transition: color 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+
+.container1 {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356); /* Subtle shadow effect */
+    background-color: #FFFFFF; /* White background for container */
+    border: 1px solid #134b7000; /* Border to match the color palette */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+.image-container {
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.image-container img {
+    width: 100%;
+    height: 150px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border-radius: 8px;
+}
+
+.image-container p {
+    margin: 10px 0 0;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.data-display {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356); /* Subtle shadow effect */
+    background-color: #FFFFFF; /* White background for container */
+    border: 1px solid #dddddd00;
+    border-radius: 15px;
+    width: auto;
+    
+}
+
+.container2 {
+    width: 61%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356); /* Subtle shadow effect */
+    background-color: #FFFFFF; /* White background for container */
+    border: 1px solid #134b7000; /* Border to match the color palette */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto; /* Centers the container horizontally with margin */
+}
+
+/* Media Query for Phone Screens */
+@media (max-width: 768px) {
+    .container2 {
+        width: 90%; /* Use full width for small screens */
+        padding: 10px; /* Reduce padding for small screens */
+        border-radius: 20px; /* Adjust the border-radius for smaller screens */
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+}
+
+
+.data-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.data-content .image-container {
+    width: 250px;
+    text-align: center;
+    margin: 10px;
+}
+
+.data-content img {
+    width: 100%;
+    height: 150px; /* Same height as in the .container */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border-radius: 8px;
+}
+
+/* Responsive Design for Phones */
+@media screen and (max-width: 768px) {
+    .container1 {
+        padding: 10px;
+        margin-top: 10%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        width: 90%; /* Use full width for small screens */
+        padding: 10px; /* Reduce padding for small screens */
+        border-radius: 10px; /* Adjust the border-radius for smaller screens */
+        
+    }
+
+    .image-container {
+        flex: 0 0 auto;
+        width: auto;
+        margin: 15px;
+        display: inline-block;
+    }
+
+    .data-display {
+        margin: 10px;
+        padding: 15px;
+        width: 90%;
+    }
+
+    .data-content {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+
+    .data-content .image-container {
+        flex: 0 0 auto;
+        width: 80%;
+        margin: 10px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-container {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .data-content .image-container {
+        width: 90%;
+        margin: 10px;
+    }
+}
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-btn:hover {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#tab1 {
+    display: block;
+}
+
+/* Responsive Design for Phones */
+@media screen and (max-width: 768px) {
+    .tab-container {
+        flex-direction: column;
+    }
+
+    .tab-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #tab2 .image-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #tab2 .image-gallery img {
+        flex: 0 0 auto;
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+/* Web Mode Styling */
+@media screen and (min-width: 769px) {
+    #tab2 .image-gallery {
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #tab2 .image-gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.image-container {
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.image-container img {
+    width: 100%;
+    height: 150px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border-radius: 8px;
+}
+
+.image-container p {
+    margin: 10px 0 0;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.data-display {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #dddddd00;
+}
+
+.data-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.data-content .image-container {
+    width: 250px;
+    text-align: center;
+    margin: 10px;
+}
+
+.data-content img {
+    width: 100%;
+    height: 150px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border-radius: 8px;
+}
+
+/* Third container styling */
+#third-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.submodel-section {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1;
+}
+
+/* Responsive Design for Phones */
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+
+    .image-container {
+        flex: 0 0 auto;
+        width: 80%;
+        margin: 15px;
+        display: inline-block;
+    }
+
+    .data-display {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .data-content {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+
+    .data-content .image-container {
+        flex: 0 0 auto;
+        width: 80%;
+        margin: 10px;
+        display: inline-block;
+    }
+
+    /* Third container responsiveness */
+    #third-container {
+        display: block;
+        margin: 10px;
+    }
+
+    .submodel-section {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.car-info-container {
+    width: auto;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for Responsive Phone Screens */
+@media screen and (max-width: 480px) {
+    .image-container {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .data-content .image-container {
+        width: 90%;
+        margin: 10px;
+    }
+
+    /* Third container responsiveness for smaller screens */
+    .submodel-section {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .big-car-image {
+        max-width: 90%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Adjustments for Car Info Container in Mobile View */
+    .car-info-container {
+        padding: 10px; /* Reduce padding for smaller screens */
+        box-shadow: none; /* Optional: Remove box-shadow to save space */
+    }
+
+    /* Ensure the car-info-container stays within the viewport */
+    .car-info-container {
+        box-sizing: border-box; /* Make sure padding and border are included in width */
+    }
+
+    .car-name {
+        font-size: 1.5em; /* Reduce font size for smaller screens */
+    }
+
+    .car-launch-date {
+        font-size: 1em; /* Adjust font size */
+    }
+
+    .car-price-history {
+        margin-bottom: 10px; /* Reduce margin for mobile screens */
+    }
+
+    .price-chart {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+
+    .car-features {
+        font-size: 1em; /* Adjust font size */
+    }
+}
+
+.car-name {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.car-picture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.big-car-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.car-launch-date {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.car-launch-date span {
+    font-weight: bold;
+}
+
+/* General Styles for Car Price History */
+.car-price-history {
+    margin-bottom: 20px;
+    border: 2px solid #000000; /* Adding border with color */
+    height: 600px; /* Fixed height */
+    width: 100%; /* Full width of parent container */
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+    position: relative; /* Position relative to use absolute positioning for the image */
+}
+
+/* Adding a placeholder image when container is empty */
+.car-price-history::before {
+    content: "";
+    display: block;
+    background-image: url('./image/image.png'); /* Path to the placeholder image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Ensure the image is on top */
+}
+
+/* Adjust content to appear on top of the image */
+.car-price-history > * {
+    position: relative; /* Position content on top of the image */
+    z-index: 2;
+}
+
+/* Phone Responsive Styles */
+@media screen and (max-width: 480px) {
+    .car-price-history {
+        height: 200px; /* Adjust height for smaller screens */
+        width: 100%; /* Full width of parent container */
+    }
+}
+
+
+.price-chart {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.car-features {
+    font-size: 1.1em;
+}
+
+.car-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.car-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.car-features li:last-child {
+    border-bottom: none;
+}
+
+
+.containerfet {
+    width: auto;
+    max-width: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0; 
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1;
+    min-width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    font-size: 1.2em;
+    color: #444;
+    margin-top: 0;
+}
+
+.feature ul {
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+.feature li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* General styling for the container */
+.car-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 100%;
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+/* Styling for each car image */
+.car-image {
+    flex: 1 1 calc(50% - 10px); /* 2 columns, adjusting for the gap */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.car-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Phone responsive mode */
+@media (max-width: 768px) {
+    .car-images-container {
+        display: grid; /* Switch to grid layout */
+        grid-template-columns: repeat(2, 50%); /* Two columns in grid */
+        grid-auto-rows: auto; /* Automatic row height */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        overflow-y: hidden; /* Disable vertical scrolling */
+        gap: 10px; /* Space between images */
+        width: 200%; /* Double the width for horizontal scroll */
+    }
+
+    .car-image {
+        width: 100%; /* Full width of the grid cell */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .car-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}

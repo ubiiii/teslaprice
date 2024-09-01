@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Prices</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container1">
+        <div class="image-container" onclick="showData('data1')">
+            <img src="./images/Model S/tesla model S 1.png" alt="Image 1" class="gallery-image">
+            <p>Model S</p>
+        </div>
+        <div class="image-container" onclick="showData('data2')">
+            <img src="./images/Model 3/Model 3.png" alt="Image 2" class="gallery-image">
+            <p>Model 3</p>
+        </div>
+        <div class="image-container" onclick="showData('data3')">
+            <img src="./images/Model X/Model X.jpg" alt="Image 3" class="gallery-image">
+            <p>Model X</p>
+        </div>
+        <div class="image-container" onclick="showData('data4')">
+            <img src="./images/Model Y/Tesla Model Y.png" alt="Image 4" class="gallery-image">
+            <p>Model Y</p>
+        </div>
+    </div>
+    
+    <div id="data-display" class="data-display">
+        <!-- Data will be shown here -->
+    </div>
+
+    <div class="container2" id="third-container" style="display: none;">
+        <div class="tab-container">
+            <button class="tab-btn" onclick="openTab('tab1')"><p>Price & Features</p></button>
+            <button class="tab-btn" onclick="openTab('tab2')"><p>Images</p></button>
+        </div>
+        <div id="tab1" class="tab-content">
+            <h2>Features</h2>
+            <p id="features-details">Details about features...</p>
+        </div>
+        <div id="tab2" class="tab-content" style="display:noe;">
+            <div class="image-gallery">
+        </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

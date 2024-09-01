@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Model Graphs</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="model-selector">
+        <button onclick="showModel('model1')">Model 1</button>
+        <button onclick="showModel('model2')">Model 2</button>
+        <button onclick="showModel('model3')">Model 3</button>
+    </div>
+    
+    <div class="graph-container" id="model1-graph">
+        <canvas id="model1-chart"></canvas>
+    </div>
+    <div class="graph-container" id="model2-graph" style="display:none;">
+        <canvas id="model2-chart"></canvas>
+    </div>
+    <div class="graph-container" id="model3-graph" style="display:none;">
+        <canvas id="model3-chart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="testscript.js"></script>
+</body>
+</html>

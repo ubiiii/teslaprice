@@ -1,0 +1,42 @@
+[
+    {
+        "model": "Model S",
+        "price": "$79,990",
+        "date": "2024-01-01"
+    },
+    {
+        "model": "Model 3",
+        "price": "$39,990",
+        "date": "2024-01-01"
+    },
+    {
+        "model": "Model X",
+        "price": "$89,990",
+        "date": "2024-01-01"
+    },
+    {
+        "model": "Model Y",
+        "price": "$49,990",
+        "date": "2024-01-01"
+    },
+    {
+        "model": "Model S",
+        "price": "$80,990",
+        "date": "2024-02-01"
+    },
+    {
+        "model": "Model 3",
+        "price": "$40,990",
+        "date": "2024-02-01"
+    },
+    {
+        "model": "Model X",
+        "price": "$90,990",
+        "date": "2024-02-01"
+    },
+    {
+        "model": "Model Y",
+        "price": "$50,990",
+        "date": "2024-02-01"
+    }
+]
